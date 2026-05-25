@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.A.R.V.I.S. Итерфейс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+
+  <div class="jarvis-wrapper">
+    <div class="core-panel">
+      <h1 class="logo">J.A.R.V.I.S.</h1>
+      <div class="status-indicator">
+        <span class="pulse-dot"></span>
+        <span id="status-text">SYSTEM: STANDBY</span>
+      </div>
+      
+      <div class="arc-reactor-container">
+        <div class="arc-reactor" id="iron-core">
+          <div class="inner-circle"></div>
+        </div>
+      </div>
+      <div class="system-specs">
+        <p>MODEL: GEMINI-2.5-FLASH</p>
+        <p>SECURE CHANNEL // ENCRYPTED</p>
+      </div>
+    </div>
+
+    <div class="chat-panel">
+      <div id="chat-output" class="terminal-body">
+        <div class="message bot">Система активна. Приветствую вас, сэр. Чем могу помочь?</div>
+      </div>
+      
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="Введите команду или протокол..." autofocus>
+        <button id="mic-btn" title="Голосовой ввод">🎤</button>
+        <button id="send-btn">ЗАПУСК</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
